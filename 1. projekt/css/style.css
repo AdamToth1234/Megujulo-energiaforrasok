@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../img/gustavo-quepon-pF_2lrjWiJE-unsplash.jpg');
+  font-family: 'Questrial';
+  background-attachment: fixed;
+    
+}
+
+.focim{
+  border: 2px solid hsl(200, 40%, 60%);
+  padding: 5px;
+  background: linear-gradient(to right, #217ca6, #21a65d);
+  width: 23vw;
+  border-radius: 20px 15px 20px;
+  box-shadow: -10px 10px 20px hsl(0, 0%, 9%);
+  margin-bottom: 5px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+img{
+    max-width: 550px;
+    min-width: 100px;
+    
+}
+
+.flex-h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 1rem;
+    max-width: 420px;
+    min-width: 100px;
+    font-family: 'Staatliches', cursive;
+}
+
+.toggle-button{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    background: violet;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 56.5vh;
+    background: linear-gradient(to left, #217ca6, #21a65d);
+    border: 2px solid hsl(200, 40%, 60%);
+    border-radius: 50px 15px 50px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: -10px 10px 20px hsl(0, 0%, 9%);
+}
+
+p, li{
+    background-color: hsl(230, 16%, 64%);
+    color: hsl(199, 22%, 23%);
+    box-shadow: 10px 10px 20px hsl(0, 0%, 9%);
+    padding: 15px;
+    font-size: 19px;
+}
+
+i{
+  padding-right: 5px;
+}
+
+#sticky-menu {
+    position: sticky;
+    top: 0; left: 0;
+    width: 80vw;
+    display: flex;
+    background: hsl(0, 0%, 24%);
+    opacity: 75%;
+  }
+  
+  #sticky-menu a {
+    width: 100%;
+    padding: 10px 0;
+   
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+   
+  #sticky-menu a:hover { background: #3281db; }
+   
+  #sticky-menu i {
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  
+  html, body {
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  #page-header, #page-contents { padding: 10px; }
+  #page-header {
+    font-weight: bold;
+    font-size: 2em;
+    background: #c6efff;
+  }
+  #page-contents {
+    height: 2000px;
+    background: #ffc7c7;
+  }
+
+  @media all and (max-width: 768px) {
+    #sticky-menu a span { display: block; }
+    #sticky-menu i { font-size: 1.7em; }
+  }
